@@ -1,0 +1,126 @@
+: raiz {
+    --cor-de-fundo :  # 1E1E1E ;
+    --verde :  # 6FFF57 ;
+    --branco :  #FFFFFF ;​
+    --botao-ativo :  # 3A375E ;
+    --botao-inativo :  rgba ( 58 ,  55 ,  94 ,  0,5 );
+    --texto-fundo :  rgba ( 58 ,  55 ,  94 ,  0.3 );
+}
+
+corpo {
+    cor de fundo :  var ( -cor-de-fundo );
+    cor :  var ( -branco );
+    família de fontes :  'Chakra Petch' , sem serifa;
+}
+
+
+. conteúdo-principal {
+    exibição : flexível;
+    direção flexível : coluna;
+    justificar-conteúdo : centro;
+    alinhar itens : centro;
+    largura máxima :  1200 px ;
+    largura :  100 % ;
+    margem :  0 automático;
+}
+
+. título-principal {
+    alinhamento de texto : esquerda;
+    largura :  100 % ;
+    tamanho da fonte :  32 px ;
+}
+
+. extensão título-principal  {
+    cor :  var ( -verde );
+}
+
+
+. botão {
+    família de fontes :  'Chakra Petch' , sem serifa;
+    cor de fundo :  var ( -botao-inativo );
+    cor :  var ( -branco );
+    exibição : flexível;
+    justificar-conteúdo : centro;
+    preenchimento :  1 em ;
+    tamanho da fonte :  18 px ;
+    alinhar itens : centro;
+    largura :  100 % ;
+    border-bottom :  var sólido de 4 px ( --botao-ativo );
+    borda esquerda :  var sólida de 2 px ( --botao-ativo );
+    borda direita :  var sólido de 2 px ( --botao-ativo );
+    borda superior : nenhum;
+}
+
+. botao : primeiro filho {
+    raio da borda :  40 px  40 px  0  0 ;
+}
+
+. botoes {
+    exibição : bloco;
+}
+
+. botao . ativo {
+    cor de fundo :  var ( --botao-ativo );
+    border-bottom :  var sólido de 4 px ( --verde );
+}
+
+. abas-textos {
+    cor de fundo :  var ( -texto-fundo );
+    preenchimento :  40 px ;
+    raio da borda :  0  0  40 px  40 px ;
+}
+. aba-conteudo . ativo {
+    exibição : bloco;
+}
+
+. aba-conteudo {
+    Mostrar nenhum ;
+}
+
+. aba-conteudo-título-principal {
+    tamanho da fonte :  28 px ;
+    alinhamento de texto : centro;
+}
+. aba-conteudo-título-secundário {
+    alinhamento de texto : centro;
+    cor :  var ( -verde );
+    transformação de texto : maiúscula;
+}
+
+. contador {
+    exibição : flexível;
+    justificar-conteúdo : centro;
+    flex-wrap : embrulhar;
+}
+. contador-dígito {
+    preenchimento :  0  16 px ;
+    alinhamento de texto : centro;
+    largura mínima :  100 px ;
+}
+
+. contador-dígito-número {
+    tamanho da fonte :  80 px ;
+    margem :  0 ;
+
+}
+
+. contador-dígito-texto {
+    cor :  var ( -verde );
+    tamanho da fonte :  20 px ;
+    margem :  0 ;
+
+}
+
+@media screen e ( largura mínima :  768 px ) {
+    . botoes {
+        exibição : flexível; 40x40
+    }
+
+    . botao : primeiro filho {
+        raio da borda :  40 px  0  0  0 ;90
+    }
+
+    . botao : último filho {
+        raio da borda :  0  40 px  0  0 ; 90
+    }
+}
